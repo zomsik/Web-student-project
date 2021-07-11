@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.form-group {
+    width: 80%;
+}
+
+#kontener {
+    width: 100%;
+}
+
+#formularz {
+    float: right;
+    width: 20%;
+}
+
+#tresc {
+    width: 80%;
+    float: left;
+    display: flex;
+    text-align: center;
+}
+
+#zdjecieRachunku {
+    width: 10%;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+#przyciskPodsumowania {
+    width: 30%;
+    float: left;
+    display: flex;
+    text-align: center;
+    clear: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#srodek {
+    min-width: 160px;
+    width: 70%;
+    float: left;
+    position: relative;
+}
+
+#zakladki {
+    min-width: 5%;
+    margin-left: 10px;
+}
+
+#przycisk {
+    position: absolute;
+    z-index: 10;
+    float: right;
+    right: 0;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 900;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
+}
+
+.gradient-border {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #formularz {
+        width: 100%;
+        max-width: 100%;
+    }
+    #tresc {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+.buttons button {
+    width: 100%;
+    margin-left: 20px;
+}
+
+#nickUzytkownika {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#tekst {
+    margin-left: 20px;
+    width: 40%;
+}
+
+*.czerwone {
+    color: red;
+}
+
+
+/* Tekst główny - animacja */
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}

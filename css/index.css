@@ -1,0 +1,30 @@
+.custom {
+    width: 200px !important;
+    height: 100px !important;
+    transition: transform 1s;
+    font: bold 16px Arial;
+}
+
+.custom:hover {
+    transform: scale(1.5);
+}
+
+*.czerwone {
+    color: red;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.menu {
+    margin: 15% auto !important;
+}

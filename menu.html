@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/session.js"></script>
+
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/notifications.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="todo.html">Lista ToDo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="rachunki.html">Rachunki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lokalizacja.html">Lokalizacje</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav fixed-right mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Wyloguj się</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mb-5 col-sm-12">
+                <div class="card h-100">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <a href="todo.html"><img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/todolist.png" /></a>
+                    </div>
+                    <div class="card-block">
+                        <br>
+                        <h4 class="card-title">Lista ToDo</h4>
+
+                        <p class="card-text">Jest to lista, w której możemy zapisać zadania o których nie chcemy zapomnieć. Możemy tutaj również umieszczać różnej maści przypomnienia lub listy zakupów, które mamy zawierać kupić w przyszłości. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5 col-sm-12">
+                <div class="card h-100">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <a href="rachunki.html"><img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/rachunki.jpg" /></a>
+                    </div>
+                    <div class="card-block">
+                        <br>
+                        <h4 class="card-title">Rachunki</h4>
+
+                        <p class="card-text">Jest to lista oferująca nam możliwość zapisania ostatnich rachunków w raz z wybraniem szczegółów zakupionych przedmiotów. Dzięki temu możemy stworzyć podsumowanie najczęściej odwiedzanych sklepów i łączny koszt zakupów. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5 col-sm-12">
+                <div class="card h-100">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <a href="lokalizacja.html"><img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/lokalizacja.png" /></a>
+                    </div>
+                    <div class="card-block">
+                        <br>
+                        <h4 class="card-title">Lokalizacje</h4>
+
+                        <p class="card-text">Mapa umożlwia naniesienie na nią wartych zapamiętania lokalizacji w raz z ich podpisem. Dzięki temu, nie umknie nam miejsce, które chcielibyśmy odwiedzić lub restauracja, w której chętnie byśmy zjedli
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2021 Copyright: Tomasz Wiejak
+    </div>
+
+</body>
+
+</html>

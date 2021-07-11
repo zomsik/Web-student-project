@@ -1,0 +1,7 @@
+<table class = "tab1"><tbody>
+<tr class = "tr1"><td class = "td1">Login:</td><td class = "td1"><input id="LoginNick" type= "text" /></td></tr>
+<tr class = "tr1"><td class = "td1">Hasło:</td><td class = "td1"><input id="Haslo" type= "password"/></td></tr>
+
+</tbody></table>
+
+<div id="login_error" class="czerwone"></div>

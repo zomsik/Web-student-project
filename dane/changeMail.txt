@@ -1,0 +1,23 @@
+<div class="modal fade" id="modalEmail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Zmiana Maila</h5>
+        <button type="button" onClick="zamknij()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <table class = "tab1"><tbody>
+        <tr class = "tr1"><td class = "td1">Stary mail:</td><td class = "td1"><input id="staryMail" type= "text" /></td></tr>
+        <tr class = "tr1"><td class = "td1">Nowy mail:</td><td class = "td1"><input id="nowyMail" type= "text"/></td></tr>
+        </tbody></table>
+            <div id="change_error" class="czerwone"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onClick="zamknij()">Anuluj</button>
+        <button type="button" class="btn btn-primary" onClick="SprawdzZmianeMaila()">Zmień mail</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>Lokalizacje</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&dummy=.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/session.js"></script>
+
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/notifications.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/lokalizacja.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="menu.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="todo.html">Lista ToDo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="rachunki.html">Rachunki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lokalizacja.html">Lokalizacje</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav fixed-right mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Wyloguj się</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="formularz">
+        <div class="form-group">
+            <label for="InputTitle">Tytuł:</label>
+            <input type="text" class="form-control" id="InputTitle">
+        </div>
+        <div class="form-group">
+            <label for="InputLatitude">Szerokość geograficzna:</label>
+            <input type="text" class="form-control" id="InputLatitude">
+        </div>
+        <div class="form-group">
+            <label for="InputLongitude">Długość geograficzna:</label>
+            <input type="text" class="form-control" id="InputLongitude"><br>
+        </div>
+        <button class="btn btn-success" onClick="savePoint()">Zapisz</button>
+        <br>
+        <br><button class="btn btn-secondary" onClick="deleteAll()">Usuń istniejące punkty</button>
+        <br>
+        <br>
+
+    </div>
+
+    <div id="item">
+        <div id="map-canvas"></div>
+    </div>
+
+    <div class="footer">
+        © 2021 Copyright: Tomasz Wiejak
+    </div>
+    <script src="js/lokalizacja.js"></script>
+</body>
+
+</html>

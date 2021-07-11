@@ -1,0 +1,9 @@
+<table class = "tab1"><tbody>
+
+<tr class = "tr1"><td class = "td1">Login:</td><td class = "td1"><input id="LoginNick" type= "text" /></td><td id="login_error" class="czerwone"></td></tr>
+<tr class = "tr1"><td class = "td1">Email:</td><td class = "td1"><input id="Email" type= "text"/></td><td id="email_error" class="czerwone"></td></tr>
+<tr class = "tr1"><td class = "td1">Hasło:</td><td class = "td1"><input id="Haslo" type= "password"/></td><td id="password_error" class="czerwone"></td></tr>
+
+</tbody></table>
+
+<div id="register_error" class="czerwone"></div>
