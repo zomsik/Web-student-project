@@ -17,7 +17,7 @@ function zamknij() {
 
 
 function ZmianaMaila() {
-    fetch("http://localhost/Projekt/dane/changeMail.txt")
+    fetch("https://zomsik.github.io/Web-student-project/dane/changeMail.txt")
         .then(response => {
             return response.text();
         })
@@ -30,7 +30,7 @@ function ZmianaMaila() {
 }
 
 function ZmianaHasla() {
-    fetch("http://localhost/Projekt/dane/changePassword.txt")
+    fetch("https://zomsik.github.io/Web-student-project/dane/changePassword.txt")
         .then(response => {
             return response.text();
         })
@@ -44,7 +44,7 @@ function ZmianaHasla() {
 }
 
 function UsuniecieKonta() {
-    fetch("http://localhost/Projekt/dane/deleteAccount.txt")
+    fetch("https://zomsik.github.io/Web-student-project/dane/deleteAccount.txt")
         .then(response => {
             return response.text();
         })

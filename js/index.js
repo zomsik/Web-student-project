@@ -3,7 +3,7 @@ function Zaloguj() {
     $("#ModalTytul").html("Logowanie");
     $("#ModalAkceptuj").html("Zaloguj");
 
-    fetch("http://localhost/Projekt/dane/formLogowania.txt")
+    fetch("https://zomsik.github.io/Web-student-project/dane/formLogowania.txt")
         .then(response => {
             return response.text();
         })
@@ -16,7 +16,7 @@ function Zarejestruj() {
     $("#ModalTytul").html("Rejestracja");
     $("#ModalAkceptuj").html("Zarejestruj");
 
-    fetch("http://localhost/Projekt/dane/formRejestracji.txt")
+    fetch("https://zomsik.github.io/Web-student-project/dane/formRejestracji.txt")
         .then(response => {
             return response.text();
         })
