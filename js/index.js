@@ -1,28 +1,26 @@
 /*jshint esversion: 6 */
-function Zaloguj() {
+
+async function responseLogReg(url){
+    const response = await fetch(`${url}`, {});
+    return response.text();
+} 
+
+async function Zaloguj() {
     $("#ModalTytul").html("Logowanie");
     $("#ModalAkceptuj").html("Zaloguj");
 
-    fetch("https://zomsik.github.io/Web-student-project/dane/formLogowania.txt")
-        .then(response => {
-            return response.text();
-        })
-        .then(dane => {
-            $("#ModalTresc").html(dane);
-        });
+    const fetchLogowania = await responseLogReg("https://zomsik.github.io/Web-student-project/dane/formLogowania.txt");
+    
+    $("#ModalTresc").html(fetchLogowania);
 }
 
-function Zarejestruj() {
+async function Zarejestruj() {
     $("#ModalTytul").html("Rejestracja");
     $("#ModalAkceptuj").html("Zarejestruj");
 
-    fetch("https://zomsik.github.io/Web-student-project/dane/formRejestracji.txt")
-        .then(response => {
-            return response.text();
-        })
-        .then(dane => {
-            $("#ModalTresc").html(dane);
-        });
+    const fetchRejestracji = await responseLogReg("https://zomsik.github.io/Web-student-project/dane/formRejestracji.txt");
+    
+    $("#ModalTresc").html(fetchRejestracji);
 }
 
 
